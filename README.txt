@@ -14,6 +14,9 @@ this theme fully compatible with all versions
 of Moodle 2.
 
 **************** Updates ***************
+12/07/12
+- Fixed indent on ordered list in activities.
+
 03/07/12
 - Fixed 1em margin to 0 at the bottom of
   paragraphs in HTML blocks.
