@@ -16,6 +16,7 @@ of Moodle 2.
 **************** Updates ***************
 12/07/12
 - Fixed indent on ordered list in activities.
+- Better code for fixing floating images.
 
 03/07/12
 - Fixed 1em margin to 0 at the bottom of
