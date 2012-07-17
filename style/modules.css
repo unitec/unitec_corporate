@@ -117,6 +117,10 @@
 
 /** Assignments **/
 /* Attempts table */
+.usersubmissions {
+    overflow: auto;
+}
+
 #attempts tr {
     border-top: 1px solid #198384;
     border-bottom: 1px solid #198384;
