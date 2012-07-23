@@ -74,6 +74,7 @@
 
 .forumpost .header a {
     color: #FFFFFF;
+    text-decoration: underline;
 }
 
 .forumpost .maincontent {
