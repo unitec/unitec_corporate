@@ -27,7 +27,6 @@
 $pre = 'side-pre';
 $post = 'side-post';
 $rtl = right_to_left();
-
 if ($rtl) {
     $regionbsid = 'region-bs-main-and-post';
     // In RTL the sides are reversed, so swap the 'essentialblocks' method parameter....
@@ -86,7 +85,7 @@ echo $OUTPUT->doctype() ?>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
-<?php require_once(dirname(__FILE__).'/includes/header.php'); ?>
+<?php require_once(dirname(__FILE__).'/includes/header_course.php'); ?>
 
 <header role="banner" class="navbar">
     <nav role="navigation" class="navbar-inner">
