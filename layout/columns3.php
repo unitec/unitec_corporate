@@ -43,6 +43,12 @@ echo $OUTPUT->doctype() ?>
 
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
+<div id="branding">
+    <div class="siteshortname"><?php echo $SITE->shortname; ?></div>
+    <div class="sitedescription"><?php p(strip_tags(format_text($SITE->summary, FORMAT_HTML))) ?></div>
+    <div class="headerlogin"><?php echo $OUTPUT->login_info() ?></div>
+</div>
+    
 <header role="banner" class="navbar navbar-fixed-top<?php echo $html->navbarclass ?>">
     <nav role="navigation" class="navbar-inner">
         <div class="container-fluid">
@@ -56,7 +62,7 @@ echo $OUTPUT->doctype() ?>
                 <?php echo $OUTPUT->custom_menu(); ?>
                 <ul class="nav pull-right">
                     <li><?php echo $OUTPUT->page_heading_menu(); ?></li>
-                    <li class="navbar-text"><?php echo $OUTPUT->login_info() ?></li>
+                    <!-- <li class="navbar-text"><?php // echo $OUTPUT->login_info() ?></li> -->
                 </ul>
             </div>
         </div>
@@ -70,7 +76,7 @@ echo $OUTPUT->doctype() ?>
             <nav class="breadcrumb-nav"><?php echo $OUTPUT->navbar(); ?></nav>
             <div class="breadcrumb-button"><?php echo $OUTPUT->page_heading_button(); ?></div>
         </div>
-        <?php echo $html->heading; ?>
+        <?php // echo $html->heading; ?>
         <div id="course-header">
             <?php echo $OUTPUT->course_header(); ?>
         </div>
