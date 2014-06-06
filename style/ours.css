@@ -22,35 +22,11 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: Impact, Charcoal, sans-serif;
-}
-
-h1 {
-    
-}
-
-h2 {
-    
-}
-
-h3 {
-    
-}
-
-h4 {
-    
-}
-
-h5 {
-    
-}
-
-h6 {
-    
+    font-family: Tahoma, Geneva, sans-serif;
 }
 
 .course-content .single-section .section-navigation .title {
-    font-family: Impact, Charcoal, sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
     font-weight: normal;
     font-size: 24.5px;
 }
@@ -67,9 +43,10 @@ h6 {
 .container-fluid {
     padding-right: 10px;
     padding-left: 10px;
+    max-width: 4000px;
 }
 
-/* Banner at the top */
+/* Branding at the top */
 
 #branding {
     background-image: url([[pix:theme|banner_top_left]]);
@@ -89,7 +66,8 @@ h6 {
 
 #branding .siteshortname {
     font-size: 25pt;
-    font-family: Impact, Charcoal, sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
     position: absolute;
     left: 250px;
     top: 32px;
@@ -97,7 +75,8 @@ h6 {
 
 #branding .sitedescription {
     font-size: 14px;
-    font-family: Impact, Charcoal, sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
     position: absolute;
     left: 250px;
     top: 60px;
@@ -121,7 +100,7 @@ h6 {
 }
 
 .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     text-decoration: none;
 }
 
@@ -131,10 +110,15 @@ h6 {
     text-shadow: 0px 1px 0px #000000;
 }
 
+.dropdown-menu > li > a,
+.dropdown-menu a {
+    color: #000000 !important;
+}
+
 .navbar .nav li.dropdown.open > .dropdown-toggle, 
 .navbar .nav li.dropdown.active > .dropdown-toggle, 
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     background-color: #4ba34f;
 }
 
@@ -142,7 +126,7 @@ h6 {
 .dropdown-menu > li > a:focus, 
 .dropdown-submenu:hover > a, 
 .dropdown-submenu:focus > a {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     background-image: none;
     background-color: #4ba34f;
 }
@@ -186,6 +170,15 @@ h6 {
     background-color: #FFFFFF;
 }
 
+/* Scrolling banner */
+
+.scrollingbanner {
+    width: 99%;
+    height: 200px;
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
 /* Blocks */
 
 .block {
@@ -195,5 +188,36 @@ h6 {
 .block .header h2 {
     color: #000000;
     text-transform: uppercase;
-    font-weight: normal;
+    font-weight: bold;
+}
+
+/* Course */
+
+input[value="Turn editing on"] {
+    background-color: #3EA055;
+    background-image: none;
+}
+
+input[value="Turn editing on"]:hover {
+    background-image: none;
+    background-color: #4CC417;
+}
+
+input[value="Turn editing off"] {
+    background-color: #E42217;
+    background-image: none;
+}
+
+input[value="Turn editing off"]:hover {
+    background-image: none;
+    background-color: #FF0000;
+}
+
+/* Book */
+
+.path-mod-book .book_toc_numbered,
+.path-mod-book .book_toc_bullets,
+.path-mod-book .book_toc_indented,
+.path-mod-book .book_toc_none {
+    font-size: 1em;
 }

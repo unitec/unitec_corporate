@@ -37,6 +37,7 @@ echo $OUTPUT->doctype() ?>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->favicon(); ?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
 </head>
 
 <body <?php echo $OUTPUT->body_attributes(); ?>>
@@ -70,6 +71,16 @@ echo $OUTPUT->doctype() ?>
 </header>
 
 <div id="page" class="container-fluid">
+    
+<?php
+    if ($this->page->pagelayout === 'frontpage') {
+        echo '<div class="scrollingbanner">
+        
+        	Hello world
+        
+        </div>';
+    }
+?>
 
     <header id="page-header" class="clearfix">
         <div id="page-navbar" class="clearfix">
@@ -99,6 +110,7 @@ echo $OUTPUT->doctype() ?>
     </div>
 
     <footer id="page-footer">
+        <a href="#top">Back to top</a><br>
         <div id="course-footer"><?php echo $OUTPUT->course_footer(); ?></div>
         <p class="helplink"><?php echo $OUTPUT->page_doc_link(); ?></p>
         <?php

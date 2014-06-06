@@ -60,3 +60,8 @@ $string['pluginname'] = 'Unitec Corporate';
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
 
+$string['mycourses'] = 'My Courses';
+$string['noenrolments'] = 'You have no current enrolments';
+
+/* My Dashboard custommenu dropdown */
+$string['mydashboard'] = 'My Dashboard';
