@@ -38,6 +38,13 @@ echo $OUTPUT->doctype() ?>
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- ninja slider start -->
+    
+    <link href="theme/unitec_corporate/ninjaslider/ninja-slider.css" rel="stylesheet" type="text/css" />
+    <script src="theme/unitec_corporate/ninjaslider/ninja-slider.js" type="text/javascript"></script>
+    
+    <!-- ninja slider end -->
+    
 </head>
 
 <body <?php echo $OUTPUT->body_attributes(); ?>>
@@ -72,15 +79,16 @@ echo $OUTPUT->doctype() ?>
 
 <div id="page" class="container-fluid">
     
-<?php
-    if ($this->page->pagelayout === 'frontpage') {
-        echo '<div class="scrollingbanner">
+        <!-- ninja slider content start -->
         
-        	Hello world
-        
-        </div>';
-    }
-?>
+        <?php
+            $ninjaslidercontent = readfile('theme/unitec_corporate/ninjaslider/content/ninjaslidercontent.htm');
+            if ($this->page->pagelayout === 'frontpage') {
+                $ninjaslidercontent;
+            }
+        ?>
+    
+        <!-- ninja slider content end -->
 
     <header id="page-header" class="clearfix">
         <div id="page-navbar" class="clearfix">
@@ -124,5 +132,6 @@ echo $OUTPUT->doctype() ?>
     <?php echo $OUTPUT->standard_end_of_body_html() ?>
 
 </div>
+    
 </body>
 </html>

@@ -23,7 +23,7 @@
 
 defined('MOODLE_INTERNAL') || die;
 
-$plugin->version   = 2014060300;
+$plugin->version   = 2014060900;
 $plugin->requires  = 2013050100;
 $plugin->component = 'theme_unitec_corporate';
 $plugin->dependencies = array(
