@@ -97,9 +97,8 @@ echo $OUTPUT->doctype() ?>
         </script>
         
         <?php
-            $bxslidercontent = readfile('theme/unitec_corporate/bxslider/content/bxslidercontent.htm');
             if ($this->page->pagelayout === 'frontpage') {
-              $bxslidercontent;
+            readfile('theme/unitec_corporate/bxslider/content/bxslidercontent.htm');
             }
         ?>
         
