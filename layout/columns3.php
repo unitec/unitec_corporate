@@ -38,12 +38,16 @@ echo $OUTPUT->doctype() ?>
     <?php echo $OUTPUT->standard_head_html() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- ninja slider start -->
+    <!-- bxslider start -->
     
-    <link href="theme/unitec_corporate/ninjaslider/ninja-slider.css" rel="stylesheet" type="text/css" />
-    <script src="theme/unitec_corporate/ninjaslider/ninja-slider.js" type="text/javascript"></script>
+    <!-- jQuery library (served from Google) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <!-- bxSlider Javascript file -->
+    <script src="theme/unitec_corporate/bxslider/js/jquery.bxslider.min.js"></script>
+    <!-- bxSlider CSS file -->
+    <link href="theme/unitec_corporate/bxslider/lib/jquery.bxslider.css" rel="stylesheet" />
     
-    <!-- ninja slider end -->
+    <!-- bxslider end-->
     
 </head>
 
@@ -79,16 +83,27 @@ echo $OUTPUT->doctype() ?>
 
 <div id="page" class="container-fluid">
     
-        <!-- ninja slider content start -->
+        <!--  BX Slider content -->
+        <script>
+            $(document).ready(function(){
+          $('.bxslider').bxSlider({
+              adaptiveHeight: true,
+              auto: true,
+              captions: true,
+              autoHover: true,
+              pause: 15000
+              });
+        });
+        </script>
         
         <?php
-            $ninjaslidercontent = readfile('theme/unitec_corporate/ninjaslider/content/ninjaslidercontent.htm');
+            $bxslidercontent = readfile('theme/miriamtest/bxslider/content/bxslidercontent.htm');
             if ($this->page->pagelayout === 'frontpage') {
-                $ninjaslidercontent;
+              $bxslidercontent;
             }
         ?>
-    
-        <!-- ninja slider content end -->
+        
+        <!-- end BX Slider content -->
 
     <header id="page-header" class="clearfix">
         <div id="page-navbar" class="clearfix">
