@@ -28,6 +28,7 @@ echo $OUTPUT->doctype() ?>
 
 <body <?php echo $OUTPUT->body_attributes(); ?>>
 
+<?php include_once("theme/unitec_corporate/analytics/analyticstracking.php") ?>
 <?php echo $OUTPUT->standard_top_of_body_html() ?>
 
 <div id="page" class="container-fluid">

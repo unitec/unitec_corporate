@@ -2,6 +2,7 @@ Changes
 -------
 
 03/06/14 - Theme created from Clean
+28/08/14 - Included Google Analytics code
 
 Theme files
 -----------
